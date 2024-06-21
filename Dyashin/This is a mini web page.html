@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>This is a Mini Web Page</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f7f7f7; /* Optional: Background color for the page */
+    }
+    .container {
+      text-align: center;
+    }
+    .rectangle-container {
+      display: flex;
+      align-items: flex-start;
+    }
+    .rectangle {
+      background-color: #b5d836;  /* Color of the rectangle */
+      border: 5px solid #000;  /* Optional: Border to better visualize the rectangle */
+      display: flex;
+      align-items: flex-start; /* Align items to the top */
+      padding: 20px; /* Increased padding for better spacing */
+      box-sizing: border-box; /* Ensure padding is included in the dimensions */
+      margin-left: 10px; /* Space between text and rectangle */
+      max-width: 1000px; /* Adjusted maximum width of the rectangle */
+    }
+    .rectangle img {
+      max-width: 45%;  /* Ensure the image fits within the rectangle */
+      max-height: 100%; /* Ensure the image fits within the rectangle */
+      margin-right: 20px;
+    }
+    .rectangle .text-container {
+      flex-grow: 1; /* Allow the text container to take up remaining space */
+      text-align: left; /* Align text to the left */
+    }
+    .rectangle p {
+      margin: 0; /* Remove default margins */
+      text-align: left;
+    }
+    .side-text {
+      align-self: flex-end;
+    }
+    #te {
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>This is a Mini Web Page</h1>
+    <div id="te">
+      <p>It includes all the basic components of any web page: <br>META tags and some links:</p>
+      See the <a href="#">Food Menu</a>
+      <br>
+      Back to <a href="#">Home Page</a>
+    </div>
+    <br><br>
+    <div class="rectangle-container">
+      <div class="side-text">And a graphic:</div>
+      <div class="rectangle">
+        <img src="C:\Users\Vajreshwari R\Desktop\Dyashin\Scie.jpg" alt="Image description">
+        <div class="text-container">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at faucibus odio. Aliquam erat volutpat. Integer nec odio at risus bibendum cursus. In hac habitasse platea dictumst. Maecenas sed convallis elit, id congue magna.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
